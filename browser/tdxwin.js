@@ -2,7 +2,7 @@ const { BrowserWindow,session } = require('electron');
 const https = require('https');
 const ini = require('ini');
 const fs = require('fs');
-const config = ini.parse(fs.readFileSync('config.ini', 'utf-8'));
+const config = ini.parse(fs.readFileSync('resources/app/config.ini', 'utf-8'));
 global.URL = config.settings.URL;
 
 function createTdxWin() {
